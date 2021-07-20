@@ -162,3 +162,18 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 sudo apt update
 sudo apt install spotify-client
 ```
+
+# App Image Launcher
+```bash
+sudo add-apt-repository ppa:appimagelauncher-team/stable
+sudo apt install appimagelauncher
+```
+
+## Freezer
+```bash
+cd Downloads/programs/linux
+cp Freezer*.AppImage ~/Applications
+nano ~/.local/share/applications/appimagekit_24c645d7fff95652a4a457d94dcdf5f7-freezer.desktop
+# remove "--no-sandbox %U" from exec
+# save
+```
