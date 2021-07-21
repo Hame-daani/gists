@@ -190,3 +190,30 @@ solution to this error:
 sudo nano /usr/share/applications/com.obsproject.Studio.desktop
 ## Exec=env LIBGL_ALWAYS_SOFTWARE=1 obs
 ```
+
+# Xampp
+
+```bash
+sudo chmod 755 xampp-linux-*-installer.run
+sudo ./xampp-linux-*-installer.run
+```
+
+after it finished, time to add launcher:
+
+```bash
+cd .local/share/applications
+nano xampp.desktop
+```
+
+containing this:
+
+```bash
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=XAMPP GUI
+Type=Application
+Exec=sh -c "pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY sudo /opt/lampp/manager-linux-x64.run"
+Terminal=false
+Icon=/opt/lampp/htdocs/favicon.ico
+Terminal=false
+```
