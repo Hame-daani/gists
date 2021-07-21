@@ -24,7 +24,7 @@ gedit admin:///etc/fstab
 Add the following lines to the bottom of fstab
 ```
 # storage mount
-UUID=66E53AEC54455DB2 /media/storage/    ntfs-3g        auto,user,rw 0 0
+UUID=8E98DD0498DCEC29 /mnt/storage/ ntfs-3g defaults,auto,uid=1000,gid=1000,umask=002 0 0
 ```
 When you’re ready, click save and then reboot. 
 
