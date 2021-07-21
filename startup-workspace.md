@@ -177,3 +177,16 @@ nano ~/.local/share/applications/appimagekit_24c645d7fff95652a4a457d94dcdf5f7-fr
 # remove "--no-sandbox %U" from exec
 # save
 ```
+
+# OBS
+```bash
+sudo apt install ffmpeg v4l2loopback-dkms
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt install obs-studio
+```
+solution to this error:  
+`Failed to initialize video. Your GPU may not be supported, or your graphics drivers may need to be updated.`
+```bash
+sudo nano /usr/share/applications/com.obsproject.Studio.desktop
+## Exec=env LIBGL_ALWAYS_SOFTWARE=1 obs
+```
