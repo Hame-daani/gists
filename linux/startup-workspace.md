@@ -31,8 +31,11 @@ sudo apt install gnome-tweaks
 sudo apt install chrome-gnome-shell
 ```
 ### Extensions
-- Persian calendar
+- ~~Persian calendar~~
 - dash to dock
+- Iranian persian calendar
+- Argos
+- Freon
 
 # Tools
 ### tmux
