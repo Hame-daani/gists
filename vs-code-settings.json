@@ -16,4 +16,25 @@
     "workbench.iconTheme": "vscode-icons",
     "bracket-pair-colorizer-2.showVerticalScopeLine": false,
     "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+    "window.restoreWindows": "none",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.pytest_cache": true,
+        "**/.venv": true
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "markdownlint.config": {
+        "MD041": false,
+    },
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "window.titleBarStyle": "custom",
+    "explorer.autoReveal": false
 }
