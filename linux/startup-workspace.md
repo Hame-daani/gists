@@ -1,3 +1,7 @@
+- home: 20 GB
+- /: 30 GB
+
+
 # Chrome
 ``` bash
 # key
