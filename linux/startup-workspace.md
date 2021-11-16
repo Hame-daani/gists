@@ -10,6 +10,14 @@ to check:
 timedatectl # RTC in local TZ: yes
 ```
 
+# IMPORTANT
+- switch repo to main server(dont fucking use iran! it will fuck libc6 version)
+## build-essential
+**install this before everything**
+```bash
+sudo apt install build-essential
+```
+
 # Tools
 ### tmux
 ``` bash
@@ -19,7 +27,7 @@ sudo apt install tmux
 ``` bash
 sudo apt install curl
 ```
-### tmux
+### git
 ``` bash
 sudo apt install git
 ```
@@ -43,10 +51,6 @@ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-ke
 sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 # install
 sudo apt install google-chrome-stable
-```
-### chrome-shell
-```bash
-sudo apt install chrome-gnome-shell
 ```
 
 # Video-player
@@ -78,7 +82,7 @@ nano ~/.zshrc # ZSH_THEME=agnoster
 # font for agnoster
 sudo apt-get install fonts-powerline
 # change name tag
-nano ~/.oh-my-zsh/themes/agnoster # change prompt_context
+nano ~/.oh-my-zsh/themes/agnoster.zsh-theme # change prompt_context
 ```
 ### syntax-highlighting
 ``` bash
@@ -105,15 +109,6 @@ sudo apt-get install code
 - gitlens
 - vscode icons(not great!)
 
-# Font
-``` bash
-# install kateb to installing persian fonts
-sudo cpan kateb
-# vazir font
-kateb install vazir
-# fira code
-sudo apt install fonts-firacode 
-```
 
 # telegram 
 ```bash
@@ -123,6 +118,16 @@ sudo snap install telegram-desktop
 # calibre
 ```bash
 sudo apt install calibre
+```
+
+# Font
+``` bash
+# install kateb to installing persian fonts
+sudo cpan kateb
+# vazir font
+kateb install vazir
+# fira code
+sudo apt install fonts-firacode 
 ```
 
 # Gnome
