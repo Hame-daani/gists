@@ -1,6 +1,15 @@
 - home: 20 GB
 - /: 30 GB
 
+# timezone messed up on windows and linux
+```bash
+timedatectl set-local-rtc 1 --adjust-system-clock
+```
+to check:
+```bash
+timedatectl # RTC in local TZ: yes
+```
+
 # Tools
 ### tmux
 ``` bash
