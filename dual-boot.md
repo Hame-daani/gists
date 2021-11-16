@@ -34,7 +34,7 @@ This is the file where your “special” folders in your home directory are def
 ```bash
 gedit .config/user-dirs.dirs
 ```
-In place of where you see **“$HOME/Downloads”** you would put in an absolute folder location, like **“/media/storage/Downloads”**.
+In place of where you see **“$HOME/Downloads”** you would put in an absolute folder location, like **“/mnt/storage/Downloads”**.
 
 use **ctrl+shift and drag** to create symlinks.
 
