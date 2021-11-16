@@ -1,6 +1,30 @@
 - home: 20 GB
 - /: 30 GB
 
+# Tools
+### tmux
+``` bash
+sudo apt install tmux
+```
+### curl
+``` bash
+sudo apt install curl
+```
+### tmux
+``` bash
+sudo apt install git
+```
+## below not neccesary
+### wine
+``` bash
+# install
+sudo apt install wine winetricks
+```
+### battery saving mode
+``` bash
+# install
+sudo apt install laptop-mode-tools
+```
 
 # Chrome
 ``` bash
@@ -19,49 +43,12 @@ sudo apt install chrome-gnome-shell
 # Video-player
 ``` bash
 # install
-sudo snap install smplayer
+# nope! sudo snap install smplayer
+sudo snap install vlc
 # codec
 sudo apt install ubuntu-restricted-extras
 ```
-- in smplayer, use **Video -> Filters -> Add black borders** for subtitle on letterbox.
-
-# Gnome
-### tweaks
-``` bash
-sudo apt install gnome-tweaks
-```
-### chrome-shell
-```bash
-sudo apt install chrome-gnome-shell
-```
-### Extensions
-- ~~Persian calendar~~
-- dash to dock
-- Iranian persian calendar
-- Argos
-- Freon
-
-# Tools
-### tmux
-``` bash
-sudo apt install tmux
-```
-### wine
-``` bash
-# install
-sudo apt install wine winetricks
-```
-### battery saving mode
-``` bash
-# install
-sudo apt install laptop-mode-tools
-```
-
-# java
-``` bash
-# install
-sudo apt-get install openjdk-11-jdk
-```
+~~in smplayer, use **Video -> Filters -> Add black borders** for subtitle on letterbox~~
 
 # ZSH
 ``` bash
@@ -117,6 +104,29 @@ sudo cpan kateb
 kateb install vazir
 # fira code
 sudo apt install fonts-firacode 
+```
+
+# Gnome
+### tweaks
+``` bash
+sudo apt install gnome-tweaks
+```
+### chrome-shell
+```bash
+sudo apt install chrome-gnome-shell
+```
+### Extensions
+- ~~Persian calendar~~
+- dash to dock
+- Iranian persian calendar
+- Argos
+- Freon
+
+
+# java
+``` bash
+# install
+sudo apt-get install openjdk-11-jdk
 ```
 
 # Flutter
