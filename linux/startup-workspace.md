@@ -115,6 +115,16 @@ kateb install vazir
 sudo apt install fonts-firacode 
 ```
 
+# telegram 
+```bash
+sudo snap install telegram-desktop
+```
+
+# calibre
+```bash
+sudo apt install calibre
+```
+
 # Gnome
 ### tweaks
 ``` bash
