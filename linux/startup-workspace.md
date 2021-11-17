@@ -72,12 +72,12 @@ sudo apt install google-chrome-stable
 # Video-player
 ``` bash
 # install
-# nope! sudo snap install smplayer
-sudo snap install vlc
+sudo snap install smplayer
+# nope!(vlc is shiiiiit) sudo snap install vlc
 # codec
 sudo apt install ubuntu-restricted-extras
 ```
-~~in smplayer, use **Video -> Filters -> Add black borders** for subtitle on letterbox~~
+in smplayer, use **Video -> Filters -> Add black borders** for subtitle on letterbox
 
 # ZSH
 ``` bash
