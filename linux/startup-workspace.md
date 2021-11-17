@@ -19,6 +19,10 @@ sudo apt install build-essential
 ```
 
 # Tools
+### pip3
+```bash
+sudo apt install python3-pip
+```
 ### tmux
 ``` bash
 sudo apt install tmux
@@ -31,6 +35,18 @@ sudo apt install curl
 ``` bash
 sudo apt install git
 ```
+### font awesome
+```bash
+sudo apt install fonts-font-awesome
+```
+### numlockx
+```bash
+sudo apt install numlockx
+sudo gedit /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
+# put this at the end:
+# greeter-setup-script=/usr/bin/numlockx on
+```
+
 ## below not neccesary
 ### wine
 ``` bash
