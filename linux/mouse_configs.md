@@ -3,6 +3,8 @@
 
 ## keymap the thumb buttons on mouse to back and forward keys
 
+> strange thing! thumb buttons now work after reinstalling os.
+
 ```bash
 sudo evtest
 ```
