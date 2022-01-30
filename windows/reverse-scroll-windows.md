@@ -20,3 +20,13 @@ Quick tip: On Windows 10, you can now copy and paste the path in the Registry's 
 1. Double-click the **FlipFlopWheel** DWORD and set the value **from 0 to 1**.
 1. Click OK.
 1. Restart your computer.
+
+# script
+
+run in powershel. Options for Downward wheel motion:
+- 0 : Move up so you see contents below (Default Mode, Windows behavior)
+- 1 : Move down so you can see contents above (Natural Mode, Mac behavior, reverse mode)
+
+```
+$mode = Read-host "How do you like your mouse scroll (0 or 1)?"; Get-PnpDevice -Class Mouse -PresentOnly -Status OK | ForEach-Object { "$($_.Name): $($_.DeviceID)"; Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Enum\$($_.DeviceID)\Device Parameters" -Name FlipFlopWheel -Value $mode; "+--- Value of FlipFlopWheel is set to " + (Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Enum\$($_.DeviceID)\Device Parameters").FlipFlopWheel + "`n" }
+```
