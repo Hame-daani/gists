@@ -125,6 +125,42 @@ sudo apt-get install code
 - gitlens
 - vscode icons(not great!)
 
+# Docker
+
+```bash
+# dependencies
+sudo apt-get install ca-certificates curl gnupg lsb-release
+# key
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+# repo
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+# install
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+
+## Uninstall
+
+```bash
+sudo apt-get purge docker-ce docker-ce-cli containerd.io
+sudo rm -rf /var/lib/docker
+sudo rm -rf /var/lib/containerd
+```
+
+## Failed Case
+
+while installing `docker-ce` it may fail and exit with error.  
+it's due to a unstable version.  
+you need to install an older version.
+
+```bash
+apt-cache policy docker-ce
+apt-cache madison docker-ce
+# find an older version
+# install it like this
+sudo apt install docker-ce=5:20.10.11~3-0~ubuntu-focal docker-ce-cli=5:20.10.11~3-0~ubuntu-focal containerd.io
+```
 
 # telegram 
 ```bash
