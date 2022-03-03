@@ -160,6 +160,13 @@ apt-cache madison docker-ce
 # find an older version
 # install it like this
 sudo apt install docker-ce=5:20.10.11~3-0~ubuntu-focal docker-ce-cli=5:20.10.11~3-0~ubuntu-focal containerd.io
+# prevent from upgrade
+sudo apt-mark hold docker-ce
+sudo apt-mark hold docker-ce-cli
+# if you want to unhold later
+sudo apt-mark unhold <package-name>
+# show holded packages
+sudo apt-mark showhold
 ```
 
 # telegram 
