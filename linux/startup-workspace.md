@@ -272,7 +272,11 @@ sudo apt install appimagelauncher
 ## Freezer
 ```bash
 cd Downloads/programs/linux
+
+# not neccessery
 cp Freezer*.AppImage ~/Applications
+# just run the appimage anywhere! a prompt will show up. click 'integrate and run' and everything will be set
+
 nano ~/.local/share/applications/appimagekit_24c645d7fff95652a4a457d94dcdf5f7-freezer.desktop
 # remove "--no-sandbox %U" from exec
 # save
