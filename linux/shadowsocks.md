@@ -10,6 +10,8 @@ sudo systemctl disable shadowsocks-libev
 ```
 
 ## create config
+use base64 decoder to get server password.  
+result will be like this `chacha20-ietf-poly1305:thepassword`
 
 ```bash
 sudo cp /etc/shadowsocks-libev/config.json /etc/shadowsocks-libev/location-of-your-server.json
